@@ -51,10 +51,45 @@ import Layout from './../layouts/Layout.astro'
 <style is:global>
     h1 {
         letter-spacing: 15px;
-        text-shadow: 0px 0px 20px #0af9;
+        text-shadow: 0px 0px 20px #fff5;
         -webkit-text-stroke: 1.5px;
-        -webkit-text-stroke-color:#0af;
+        -webkit-text-stroke-color:#fff;
         animation: fade 500ms;
+        animation: color 12s infinite alternate;
+    }
+    @keyframes color {
+        0% {
+            text-shadow: 0px 0px 20px #f005;
+            -webkit-text-stroke-color:#f00;
+        }
+        15% {
+            text-shadow: 0px 0px 20px rgba(255, 0, 255, 0.333);
+            -webkit-text-stroke-color:#ff00d4;
+        }
+        30% {
+            text-shadow: 0px 0px 20px #6200ff55;
+            -webkit-text-stroke-color:#6200ff;
+        }
+        45% {
+            text-shadow: 0px 0px 20px #0004ff55;
+            -webkit-text-stroke-color:#0004ff;
+        }
+        60% {
+            text-shadow: 0px 0px 20px #00a2ff55;
+            -webkit-text-stroke-color:#00a2ff;
+        }
+        75% {
+            text-shadow: 0px 0px 20px #00ff5555;
+            -webkit-text-stroke-color:#00ff55;
+        }
+        90% {
+            text-shadow: 0px 0px 20px #e5ff0055;
+            -webkit-text-stroke-color:#e5ff00;
+        }
+        100% {
+            text-shadow: 0px 0px 20px #ff990055;
+            -webkit-text-stroke-color:#ff9900;
+        }
     }
     @keyframes fade {
         0% {
