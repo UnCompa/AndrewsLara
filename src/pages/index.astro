@@ -1,24 +1,12 @@
 ---
 import Layout from './../layouts/Layout.astro'
+import Inicio from './../components/Inicio.astro'
+import Informacion from './../components/Informacion.astro'
 ---
 <Layout>
-    <main class="bg-gradient-to-t from-slate-900 via-sky-900 to-blue-950 h-full w-full">
-        <div class="h-screen flex [flex-direction:column] [align-items:center] [justify-content:center]">
-            <h1 class="text-transparent text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-center font-Poppins uppercase transition-transform py-4">AndrewsLara</h1>
-            <p class="text-white text-xl italic font-Montserrat text-center">"No busques diamantes en una cueva explorada, ya que estara vacia"</p>
-        </div>
-        <section class="h-[100%] w-full grid grid-cols-1 lg:grid-cols-2 place-items-center">
-            <div class="bg-green-500 p-4 h-full w-full font-Poppins">
-                <h2 class="text-3xl py-3">El insano</h2>
-                <h3 class="text-xl">Andrews Lara</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae magni iusto dicta, aliquid temporibus fuga dolorem voluptate amet consectetur nesciunt tempore delectus repellat, facilis velit laborum enim consequatur at.</p>
-            </div>
-            <div class="bg-green-900 h-full w-full grid place-items-center">
-                <div class="h-72 w-72 bg-slate-500">
-                    <img src="" alt="uwu">
-                </div>
-            </div>
-        </section>
+    <main class="bg-gradient-to-t from-zinc-900 to-zinc-950 h-full w-full">
+        <Inicio/>
+        <Informacion/>
     </main>
 </Layout>
 <style is:global>
