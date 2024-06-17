@@ -3,66 +3,26 @@ import Xd from '../components/Xd.astro';
 import Layout from './../layouts/Layout.astro'
 ---
 <Layout>
-    <main class="bg-gradient-to-t from-slate-900 via-sky-900 to-blue-950 h-full w-full">
+    <main class="bg-gradient-to-tr from-zinc-950 via-zinc-900 to-zinc-800 h-full w-full">
         <div class="h-screen flex [flex-direction:column] [align-items:center] [justify-content:center]">
-            <h1 class="text-transparent text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-center font-Poppins uppercase transition-transform py-4">AndrewsLara</h1>
-            <p class="text-white text-xl italic font-Montserrat text-center">"No busques diamantes en una cueva explorada, ya que estara vacia"</p>
+            <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-center font-Bebas uppercase transition-transform py-4">AndrewsLara</h1>
+            <p class="text-white text-xl italic font-Montserrat text-center font-Bebas">"No busques diamantes en una cueva explorada, ya que estara vacia"</p>
         </div>
     </main>
 </Layout>
 <style is:global>
     @media (max-width:700px) {
         h1 {
-        letter-spacing: 15px;
-        text-shadow: 0px 0px 20px #fff5;
-        -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color:#fff;
+        color: #fff5;
         animation: color 6s infinite alternate;
     }
 }
 @media (min-width:700px) {
         h1 {
-        letter-spacing: 15px;
-        text-shadow: 0px 0px 20px #fff5;
-        -webkit-text-stroke: 3px;
-        -webkit-text-stroke-color:#fff;
+        color: #fff5;
         animation: color 6s infinite alternate;
     }
 }
-    @keyframes color {
-        0% {
-            text-shadow: 0px 0px 20px #f005;
-            -webkit-text-stroke-color:#f00;
-        }
-        15% {
-            text-shadow: 0px 0px 20px rgba(255, 0, 255, 0.333);
-            -webkit-text-stroke-color:#ff00d4;
-        }
-        30% {
-            text-shadow: 0px 0px 20px #6200ff55;
-            -webkit-text-stroke-color:#6200ff;
-        }
-        45% {
-            text-shadow: 0px 0px 20px #0004ff55;
-            -webkit-text-stroke-color:#0004ff;
-        }
-        60% {
-            text-shadow: 0px 0px 20px #00a2ff55;
-            -webkit-text-stroke-color:#00a2ff;
-        }
-        75% {
-            text-shadow: 0px 0px 20px #00ff5555;
-            -webkit-text-stroke-color:#00ff55;
-        }
-        90% {
-            text-shadow: 0px 0px 20px #e5ff0055;
-            -webkit-text-stroke-color:#e5ff00;
-        }
-        100% {
-            text-shadow: 0px 0px 20px #ff990055;
-            -webkit-text-stroke-color:#ff9900;
-        }
-    }
     @keyframes fade {
         0% {
             transform: scale(0);

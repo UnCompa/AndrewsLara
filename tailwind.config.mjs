@@ -4,10 +4,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				"Gabarito": ["'Gabarito', sans-serif;"],
-				"Montserrat": ["'Montserrat', sans-serif"],
-				"Poppins": ["'Poppins', sans-serif;"],
-				"Roboto": ["'Roboto', sans-serif;"]
+				"Bebas": ["'Bebas Neue', sans-serif;"],
+				"Outfit": ["'Outfit', sans-serif"],
 			}
 		},
 	},
